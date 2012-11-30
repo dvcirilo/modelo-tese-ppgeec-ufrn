@@ -56,9 +56,9 @@
 \usepackage{url}
 % Para reduzir os espaços entre os ítens (itemize, enumerate, etc.)
 % Este pacote não faz parte da distribuição padrão do LaTeX.
-\usepackage{noitemsep}
+\usepackage{packages/noitemsep}
 % Para as citações bibliográficas
-\usepackage[abbr]{harvard}	% As chamadas são sempre abreviadas
+\usepackage[abbr]{packages/harvard}	% As chamadas são sempre abreviadas
 \harvardparenthesis{square}	% Colchetes nas chamadas
 \harvardyearparenthesis{round}	% Parêntesis nos anos das referências
 %\renewcommand{\harvardand}{e}	% Substituir "&" por "e" nas referências
@@ -78,14 +78,14 @@
 % Para incluir algoritmos e listagens de códigos
 %\usepackage{listings}
 % Capítulos com títulos em um formato "decorado"
-\usepackage{capitulos}
+\usepackage{packages/capitulos}
 
 % NOVOS COMANDOS
 
 % As definições dos novos comandos estão agrupadas no arquivo "comandos.tex"
 % Esta separação é opcional: se você preferir, pode por as definições
 % diretamente neste arquivo
-\input{comandos.tex}
+\input{packages/comandos.tex}
 
 %
 % As margens
@@ -137,7 +137,7 @@
 % O estilo das referências bibliográficas
 %
 
-\bibliographystyle{ppgee}
+\bibliographystyle{bib/ppgee}
 
 %
 % O espaçamento entre linhas
@@ -147,7 +147,7 @@
 \singlespacing
 
 % Para a criação do glossário (ou lista de símbolos)
-\makeglossary
+\makenomenclature
 
 % Lista de arquivos a serem processados. Estes comandos "includeonly" são
 % dispensáveis e devem obrigatoriamente ser comentados na hora de gerar o
@@ -174,20 +174,20 @@
 \pagestyle{empty}
 
 % Página de rosto (capa interna)
-\include{rosto}
+\include{capitulos/rosto}
 
 % Ficha catalográfica: os dados catalográficos devem ser fornecidos
 % pela BCZM.
 % Só são incluídos na versão final da tese ou dissertação. Não são
 % incluídos nem na proposta de tema de qualificação nem na versão
 % preliminar da tese ou dissertação: nestes casos, comente a próxima linha.
-\include{catalograficos}
+\include{capitulos/catalograficos}
 
 % Assinaturas da banca, dedicatória e agradecimentos
 % Só são incluídos na versão final da tese ou dissertação. Não são
 % incluídos nem na proposta de tema de qualificação nem na versão
 % preliminar da tese ou dissertação: nestes casos, comente a próxima linha.
-\include{preambulo}
+\include{capitulos/preambulo}
 
 %
 % O espaçamento entre linhas
@@ -201,7 +201,7 @@
 %\onehalfspacing
 
 % Resumo/Abstract
-\include{resumos}
+\include{capitulos/resumos}
 
 % Paginas introdutórias (com numeração romana)
 \frontmatter
@@ -226,11 +226,11 @@
 \renewcommand{\nomname}{Lista de Símbolos e Abreviaturas}
 \markboth{\MakeUppercase{\nomname}}{\MakeUppercase{\nomname}}
 \addcontentsline{toc}{chapter}{\nomname}
-% O argumento opcional do comando \printglossary é a largura deixada
+% O argumento opcional do comando \printnomenclature é a largura deixada
 % para os símbolos no glossário. Se seus símbolos são "largos", como
 % neste exemplo,  é melhor por mais espaço do que o 1cm que é reservado
 % por default
-\printglossary[1.5cm]
+\printnomenclature[1.5cm]
 
 % Páginas do texto principal (com cabeçalho)
 \mainmatter
@@ -241,27 +241,27 @@
 % classificados por capítulos
 
 % Cap. 1 - Introdução
-\include{introducao/introducao}
+\include{capitulos/introducao/introducao}
 
 % Cap. 2 - Estilo
-\include{estilo/estilo}
+\include{capitulos/estilo/estilo}
 
 % Cap. 3 - Matemática
-\include{matematica/matematica}
+\include{capitulos/matematica/matematica}
 
 % Cap. 4 - Figuras, gráficos e tabelas
-\include{figuras/figuras}
+\include{capitulos/figuras/figuras}
 
 % Cap. 5 - Conclusões
-\include{conclusao/conclusao}
+\include{capitulos/conclusao/conclusao}
 
 % Referências bibliogáficas (geradas automaticamente)
 \addcontentsline{toc}{chapter}{Referências bibliográficas}
-\bibliography{bibliografia}
+\bibliography{bib/bibliografia}
 
 \appendix
 
-%Apêndice A 
-\include{apendice/apendice}
+%Apêndice A
+\include{capitulos/apendice/apendice}
 
 \end{document}
