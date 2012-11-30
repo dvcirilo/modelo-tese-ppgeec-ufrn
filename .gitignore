@@ -5,3 +5,9 @@
 *.bbl
 *.pdf
 *.log
+*.ilg
+*.lot
+*.lof
+*.nlo
+*.nls
+*.toc
