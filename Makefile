@@ -1,40 +1,23 @@
-ARQFONTE = principal.tex comandos.tex rosto.tex catalograficos.tex \
-	preambulo.tex resumos.tex \
-	introducao/introducao.tex \
-	matematica/matematica.tex \
-	figuras/figuras.tex \
-	conclusao/conclusao.tex \
-	apendice/apendice.tex
+# Comentário
 
-default: principal.dvi
+default: all
 
-simples:
-	latex principal
+all: pdf nomenclature bibtex
 
-principal.pdf: principal.ps
-	ps2pdf -dMaxSubsetPct=100 -dCompatibilityLevel=1.2 -dSubsetFonts=true -dEmbedAllFonts=true -sPAPERSIZE=a4 principal.ps principal.pdf
+pdf:
+	pdflatex principal.tex
 
-principal.ps: principal.dvi
-	dvips -Ppdf -t a4 -o principal.ps principal.dvi
+nomenclature: pdf
+	makeindex principal.nlo -s nomencl.ist -o principal.nls
+	pdflatex principal.tex
 
-principal.dvi: ${ARQFONTE} principal.bbl principal.gls
-	latex principal
-	latex principal
-
-principal.bbl: principal.aux bibliografia.bib
-	bibtex principal
-
-principal.gls: principal.glo
-	makeindex -s nomencl.ist -o principal.gls principal.glo
-
-principal.aux: ${ARQFONTE}
-	latex principal
-
-principal.glo: ${ARQFONTE}
-	latex principal
+bibtex: pdf
+	bibtex principal.aux
+	pdflatex principal.tex
+	pdflatex principal.tex
 
 clean:
-	rm -f *.aux *~ *.bak */*.aux */*~ */*.bak principal.bbl principal.blg principal.dvi principal.glo principal.gls principal.ilg principal.lof principal.log principal.lot principal.toc
+	rm -f  *.aux *~ *.bak */*.aux */*~ */*.bak */*/*.aux principal.bbl principal.blg principal.dvi principal.nlo principal.nls principal.ilg principal.lof principal.log principal.lot principal.toc
 
 realclean: clean
-	rm -f principal.ps principal.pdf
+	rm  principal.pdf
