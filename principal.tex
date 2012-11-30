@@ -174,20 +174,20 @@
 \pagestyle{empty}
 
 % Página de rosto (capa interna)
-\include{capitulos/rosto}
+\include{tex/00-estrutural/rosto}
 
 % Ficha catalográfica: os dados catalográficos devem ser fornecidos
 % pela BCZM.
 % Só são incluídos na versão final da tese ou dissertação. Não são
 % incluídos nem na proposta de tema de qualificação nem na versão
 % preliminar da tese ou dissertação: nestes casos, comente a próxima linha.
-\include{capitulos/catalograficos}
+\include{tex/00-estrutural/catalograficos}
 
 % Assinaturas da banca, dedicatória e agradecimentos
 % Só são incluídos na versão final da tese ou dissertação. Não são
 % incluídos nem na proposta de tema de qualificação nem na versão
 % preliminar da tese ou dissertação: nestes casos, comente a próxima linha.
-\include{capitulos/preambulo}
+\include{tex/00-estrutural/preambulo}
 
 %
 % O espaçamento entre linhas
@@ -201,7 +201,7 @@
 %\onehalfspacing
 
 % Resumo/Abstract
-\include{capitulos/resumos}
+\include{tex/00-estrutural/resumos}
 
 % Paginas introdutórias (com numeração romana)
 \frontmatter
@@ -221,7 +221,7 @@
 \listoftables
 
 % Glossário (gerado automaticamente - veja entradas em
-% introducao/introducao.tex e em estilo/estilo.tex)
+% tex/00-introducao/introducao.tex e em tex/02-estilo/estilo.tex)
 \cleardoublepage
 \renewcommand{\nomname}{Lista de Símbolos e Abreviaturas}
 \markboth{\MakeUppercase{\nomname}}{\MakeUppercase{\nomname}}
@@ -241,19 +241,19 @@
 % classificados por capítulos
 
 % Cap. 1 - Introdução
-\include{capitulos/introducao/introducao}
+\include{tex/01-introducao/introducao}
 
 % Cap. 2 - Estilo
-\include{capitulos/estilo/estilo}
+\include{tex/02-estilo/estilo}
 
 % Cap. 3 - Matemática
-\include{capitulos/matematica/matematica}
+\include{tex/03-matematica/matematica}
 
 % Cap. 4 - Figuras, gráficos e tabelas
-\include{capitulos/figuras/figuras}
+\include{tex/04-figuras/figuras}
 
 % Cap. 5 - Conclusões
-\include{capitulos/conclusao/conclusao}
+\include{tex/05-conclusao/conclusao}
 
 % Referências bibliogáficas (geradas automaticamente)
 \addcontentsline{toc}{chapter}{Referências bibliográficas}
@@ -262,6 +262,6 @@
 \appendix
 
 %Apêndice A
-\include{capitulos/apendice/apendice}
+\include{tex/xx-apendice/apendice}
 
 \end{document}

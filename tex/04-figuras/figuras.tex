@@ -229,7 +229,7 @@ por ferramentas externas ao \LaTeX, salvas em um arquivo e inseridas
 no texto usando o comando \texttt{includegraphics}. Da mesma forma
 que as tabelas, as figuras podem ser flutuantes, caso sejam
 inseridas dentro de um ambiente \texttt{figure}, ou ter uma posição
-fixa no texto (como aqui: \includegraphics{capitulos/figuras/eu}).
+fixa no texto (como aqui: \includegraphics{tex/04-figuras/figuras/eu}).
 
 O formato em que você deve salvar os arquivos das figuras para que
 possa incluí-las no texto depende de como você pretende compilar
@@ -293,7 +293,7 @@ imagem no texto \LaTeX.
 
 \begin{figure}[htbp!] \begin{center}
 % fbox faz uma borda ao redor do seu argumento
-\fbox{\includegraphics[width=0.75\linewidth]{capitulos/figuras/belmonte}}
+\fbox{\includegraphics[width=0.75\linewidth]{tex/04-figuras/figuras/belmonte}}
 \caption{Exemplo de imagem real}
 \label{Fig:belmonte}
 \end{center} \end{figure}
@@ -333,37 +333,37 @@ pelo \texttt{includegraphics} para que a imagem ocupe toda a largura
 da linha.
 
 \begin{figure}[htbp!] \begin{center}
-\includegraphics{capitulos/figuras/bigvetorial}
+\includegraphics{tex/04-figuras/figuras/bigvetorial}
 \caption{Figura vetorial grande em tamanho natural}
 \vspace{6mm}
 \label{Fig:bigvetorial}
-\includegraphics{capitulos/figuras/bigbitmap}
+\includegraphics{tex/04-figuras/figuras/bigbitmap}
 \caption{Figura \emph{pixel}-a-\emph{pixel} grande em tamanho natural}
 \label{Fig:bigbitmap}
 \vspace{6mm}
-\includegraphics[scale=0.5]{capitulos/figuras/bigvetorial}
+\includegraphics[scale=0.5]{tex/04-figuras/figuras/bigvetorial}
 \caption{Figura vetorial grande em tamanho reduzido}
 \label{Fig:bigvetorialreduzida}
 \vspace{6mm}
-\includegraphics[scale=0.5]{capitulos/figuras/bigbitmap}
+\includegraphics[scale=0.5]{tex/04-figuras/figuras/bigbitmap}
 \caption{Figura \emph{pixel}-a-\emph{pixel} grande em tamanho reduzido}
 \label{Fig:bigbitmapreduzida}
 \end{center} \end{figure}
 
 \begin{figure}[htbp!] \begin{center}
-\includegraphics{capitulos/figuras/smallvetorial}
+\includegraphics{tex/04-figuras/figuras/smallvetorial}
 \caption{Figura vetorial pequena em tamanho natural}
 \label{Fig:smallvetorial}
 \vspace{6mm}
-\includegraphics{capitulos/figuras/smallbitmap}
+\includegraphics{tex/04-figuras/figuras/smallbitmap}
 \caption{Figura \emph{pixel}-a-\emph{pixel} pequena em tamanho natural}
 \label{Fig:smallbitmap}
 \vspace{6mm}
-\includegraphics[width=\linewidth]{capitulos/figuras/smallvetorial}
+\includegraphics[width=\linewidth]{tex/04-figuras/figuras/smallvetorial}
 \caption{Figura vetorial pequena em tamanho ampliado}
 \label{Fig:smallvetorialampliada}
 \vspace{6mm}
-\includegraphics[width=\linewidth]{capitulos/figuras/smallbitmap}
+\includegraphics[width=\linewidth]{tex/04-figuras/figuras/smallbitmap}
 \caption{Figura \emph{pixel}-a-\emph{pixel} pequena em tamanho ampliado}
 \label{Fig:smallbitmapampliada}
 \end{center} \end{figure}
@@ -399,7 +399,7 @@ azul sobre o qual se desenha a figura interna preenchido de branco,
 como mostram os exemplos da figura~\ref{Fig:circulo}.
 
 \begin{figure}[htb] \begin{center}
-\includegraphics{capitulos/figuras/circulo}
+\includegraphics{tex/04-figuras/figuras/circulo}
 \caption{Preenchimento de figuras utilizando diferentes profundidades}
 \label{Fig:circulo}
 \end{center} \end{figure}
@@ -412,7 +412,7 @@ pode ser utilizada para mesclar imagens com figuras sintéticas, como
 na figura \ref{Fig:pensador} (veja arquivo \texttt{figuras/pensador.fig}).
 
 \begin{figure}[htb] \begin{center}
-\includegraphics{capitulos/figuras/pensador}
+\includegraphics{tex/04-figuras/figuras/pensador}
 \caption{Imagem mesclada com elementos sintéticos}
 \label{Fig:pensador}
 \end{center} \end{figure}
@@ -431,7 +431,7 @@ um exemplo na figura \ref{Fig:combinado}; note que o arquivo é incluído com
 \newcommand{\formulagrande}{$\frac{G_3G_4}{1-G_3G_4H_1}$}
 \begin{figure}[htb] \begin{center}
 %\input{figuras/combinado.pstex_t} % Se usar latex
-\input{capitulos/figuras/combinado.pdftex_t} % Se usar pdflatex
+\input{tex/04-figuras/figuras/combinado.pdftex_t} % Se usar pdflatex
 \caption{Figura incluindo comandos \LaTeX}
 \label{Fig:combinado}
 \end{center} \end{figure}
@@ -454,7 +454,7 @@ comando de linha \texttt{gnuplot grafico.gnuplot}. Este arquivo
 
 \begin{figure}[htbp]
 \centering
-\includegraphics{capitulos/figuras/grafico}
+\includegraphics{tex/04-figuras/figuras/grafico}
 \caption{Exemplo de gráfico de funções matemáticas}
 \label{fig:grafico}
 \end{figure}
