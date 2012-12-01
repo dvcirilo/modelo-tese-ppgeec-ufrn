@@ -20,4 +20,4 @@ clean:
 	rm -f  *.aux *~ *.bak */*.aux */*~ */*.bak */*/*.aux principal.bbl principal.blg principal.dvi principal.nlo principal.nls principal.ilg principal.lof principal.log principal.lot principal.toc
 
 realclean: clean
-	rm  principal.pdf
+	rm -f principal.pdf
