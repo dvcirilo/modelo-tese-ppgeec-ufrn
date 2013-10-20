@@ -1,96 +1,96 @@
 %%
-%% CapÌtulo 1: Modelo de CapÌtulo
+%% Cap√≠tulo 1: Modelo de Cap√≠tulo
 %%
 
-% Est· sendo usando o comando \mychapter, que foi definido no arquivo
-% comandos.tex. Este comando \mychapter È essencialmente o mesmo que o
-% comando \chapter, com a diferenÁa que acrescenta um \thispagestyle{empty}
-% apÛs o \chapter. Isto È necess·rio para corrigir um erro de LaTeX, que
-% coloca um n˙mero de p·gina no rodapÈ de todas as p·ginas iniciais dos
-% capÌtulos, mesmo quando o estilo de numeraÁ„o escolhido È outro.
-\mychapter{IntroduÁ„o}
+% Est√° sendo usando o comando \mychapter, que foi definido no arquivo
+% comandos.tex. Este comando \mychapter √© essencialmente o mesmo que o
+% comando \chapter, com a diferen√ßa que acrescenta um \thispagestyle{empty}
+% ap√≥s o \chapter. Isto √© necess√°rio para corrigir um erro de LaTeX, que
+% coloca um n√∫mero de p√°gina no rodap√© de todas as p√°ginas iniciais dos
+% cap√≠tulos, mesmo quando o estilo de numera√ß√£o escolhido √© outro.
+\mychapter{Introdu√ß√£o}
 \label{Cap:introducao}
 
-Este documento È um modelo para propostas de tema para exames de
-qualificaÁ„o, dissertaÁıes de mestrado e teses de doutorado a serem
-submetidos ao Programa de PÛs-GraduaÁ„o em Engenharia ElÈtrica (PPgEE)
+Este documento √© um modelo para propostas de tema para exames de
+qualifica√ß√£o, disserta√ß√µes de mestrado e teses de doutorado a serem
+submetidos ao Programa de P√≥s-Gradua√ß√£o em Engenharia El√©trica (PPgEE)
 da Universidade Federal do Rio Grande do Norte (UFRN).  Procure ler o
-texto acompanhando o resultado produzido a partir do cÛdigo fonte que
+texto acompanhando o resultado produzido a partir do c√≥digo fonte que
 o gerou.
 
-Neste capÌtulo introdutÛrio apresentaremos algumas idÈias gerais sobre
+Neste cap√≠tulo introdut√≥rio apresentaremos algumas id√©ias gerais sobre
 como compilar documentos utilizando o processador de textos \LaTeX.
 
 \section{Processando textos com \LaTeX}
 
-O \LaTeX\ n„o È um editor de texto no sentido convencional. Ele funciona
-muito mais como um ``compilador'' de uma linguagem de programaÁ„o de
+O \LaTeX\ n√£o √© um editor de texto no sentido convencional. Ele funciona
+muito mais como um ``compilador'' de uma linguagem de programa√ß√£o de
 textos:%
-% Este È um comando para incluir um item no gloss·rio
-% Note os % no fim da linha anterior e da prÛxima
+% Este √© um comando para incluir um item no gloss√°rio
+% Note os % no fim da linha anterior e da pr√≥xima
 \nomenclature{\LaTeX:}{um poderoso processador de textos}%
 \begin{enumerate}
-\item Inicialmente vocÍ escreve um ``programa'' nesta linguagem de
-programaÁ„o de textos (linguagem \LaTeX), dizendo o conte˙do e a
-formataÁ„o do seu documento.  Para escrever este ``programa'' pode-se
+\item Inicialmente voc√™ escreve um ``programa'' nesta linguagem de
+programa√ß√£o de textos (linguagem \LaTeX), dizendo o conte√∫do e a
+formata√ß√£o do seu documento.  Para escrever este ``programa'' pode-se
 usar qualquer editor de textos capaz de salvar documentos em formato
 texto ASCII puro.
-\item O prÛximo passo È compilar este cÛdigo fonte, produzindo um arquivo
-\texttt{.dvi} que funciona como um ``programa objeto''. Esta compilaÁ„o
-È feita pelo programa \texttt{latex}.
-\item Em seguida o arquivo \texttt{.dvi} È convertido para o formato no
+\item O pr√≥ximo passo √© compilar este c√≥digo fonte, produzindo um arquivo
+\texttt{.dvi} que funciona como um ``programa objeto''. Esta compila√ß√£o
+√© feita pelo programa \texttt{latex}.
+\item Em seguida o arquivo \texttt{.dvi} √© convertido para o formato no
 qual se deseja produzir o texto: PostScript (usando o programa
-\texttt{dvips}), PDF (usando o \texttt{pdflatex}, que j· faz esta fase
-e a fase anterior) ou visualizaÁ„o na tela (\texttt{xdvi}).
+\texttt{dvips}), PDF (usando o \texttt{pdflatex}, que j√° faz esta fase
+e a fase anterior) ou visualiza√ß√£o na tela (\texttt{xdvi}).
 \end{enumerate}
-Estas explicaÁıes tomaram como base a vers„o do \LaTeX\ mais comum para
-sistemas operacionais Unix. Existem outras implementaÁıes tanto para
-Unix quanto para Windows, onde os comandos executados s„o diferentes
-mas a idÈia geral È sempre a mesma.
+Estas explica√ß√µes tomaram como base a vers√£o do \LaTeX\ mais comum para
+sistemas operacionais Unix. Existem outras implementa√ß√µes tanto para
+Unix quanto para Windows, onde os comandos executados s√£o diferentes
+mas a id√©ia geral √© sempre a mesma.
 
-AlÈm do \texttt{latex} para compilar o texto, pode ser necess·rio
+Al√©m do \texttt{latex} para compilar o texto, pode ser necess√°rio
 executar outros programas, como o \texttt{bibtex} para incluir
-automaticamente as referÍncias bibliogr·ficas ou o \texttt{makeindex}
-para gerar o gloss·rio. Estes programas devem ser chamados em uma
-ordem especÌfica. Para automatizar este processo, È fornecido um
-arquivo \texttt{Makefile}, de modo que a compilaÁ„o completa pode
+automaticamente as refer√™ncias bibliogr√°ficas ou o \texttt{makeindex}
+para gerar o gloss√°rio. Estes programas devem ser chamados em uma
+ordem espec√≠fica. Para automatizar este processo, √© fornecido um
+arquivo \texttt{Makefile}, de modo que a compila√ß√£o completa pode
 ser feita utilizando um dos seguintes comandos:%
-\nomenclature{\BibTeX:}{uma ferramenta para geraÁ„o autom·tica de
-listas de referÍncias bibliogr·ficas}%
+\nomenclature{\BibTeX:}{uma ferramenta para gera√ß√£o autom√°tica de
+listas de refer√™ncias bibliogr√°ficas}%
 \begin{description}
 \item[{\tt make}:] executa a tarefa \emph{par default}, que pode ser
 alterada no \texttt{Makefile} para apontar para qualquer uma das seguintes.
 \item[{\tt make simples}:] apenas executa o \texttt{latex} uma vez;
 \item[{\tt make principal.dvi}:] executa todos os passos e aplicativos
-necess·rios para produzir o arquivo \texttt{.dvi} completo;
+necess√°rios para produzir o arquivo \texttt{.dvi} completo;
 \item[{\tt make principal.ps}:] executa todos os passos e aplicativos
-necess·rios para produzir o arquivo PostScript \texttt{principal.ps}
+necess√°rios para produzir o arquivo PostScript \texttt{principal.ps}
 completo;
 \item[{\tt make principal.pdf}:] executa todos os passos e aplicativos
-necess·rios para produzir o arquivo PDF \texttt{principal.pdf} completo;
-\item[{\tt make clean}:] remove todos os arquivos intermedi·rios gerados
-no processo de compilaÁ„o, inclusive o \texttt{principal.dvi}.
-\item[{\tt make realclean}:] alÈm de fazer um \texttt{make clean}, remove
+necess√°rios para produzir o arquivo PDF \texttt{principal.pdf} completo;
+\item[{\tt make clean}:] remove todos os arquivos intermedi√°rios gerados
+no processo de compila√ß√£o, inclusive o \texttt{principal.dvi}.
+\item[{\tt make realclean}:] al√©m de fazer um \texttt{make clean}, remove
 os arquivos \texttt{principal.ps} e \texttt{principal.pdf}.
 \end{description}
 
-\section{OrganizaÁ„o do texto}
+\section{Organiza√ß√£o do texto}
 
-O fecho do capÌtulo introdutÛrio muitas vezes apresenta uma idÈia
-global do trabalho, mostrando o que vai ser tratado nos capÌtulos
-subseq¸entes\footnote{Contrariando o que muitos acreditam, o trema
-ainda n„o foi abolido do portuguÍs oficial do Brasil, o que j·
+O fecho do cap√≠tulo introdut√≥rio muitas vezes apresenta uma id√©ia
+global do trabalho, mostrando o que vai ser tratado nos cap√≠tulos
+subseq√ºentes\footnote{Contrariando o que muitos acreditam, o trema
+ainda n√£o foi abolido do portugu√™s oficial do Brasil, o que j√°
 aconteceu em Portugal; portanto, deve ser usado em palavras como
-seq¸Íncia, freq¸Íncia e aq¸Ìfero.}.
+seq√º√™ncia, freq√º√™ncia e aq√º√≠fero.}.
 
-Neste documento, o capÌtulo~\ref{Cap:estilo} apresenta as diretrizes
-gerais sobre a formataÁ„o dos textos. O capÌtulo~\ref{Cap:matematica}
-apresenta alguns recursos dp \LaTeX\ para escrever expressıes
-matem·ticas, enquanto o capÌtulo~\ref{Cap:figuras} trata da inclus„o
-de tabelas, gr·ficos e figuras no documento. O
-capÌtulo~\ref{Cap:conclusao}, que faz as vezes de capitulo de
-conclusıes e perspectivas, mostra alguns exemplos de construÁ„o
-autom·tica de bibliografias utilizando o aplicativo \BibTeX\ e
-menciona fontes adicionais para mais informaÁıes.
+Neste documento, o cap√≠tulo~\ref{Cap:estilo} apresenta as diretrizes
+gerais sobre a formata√ß√£o dos textos. O cap√≠tulo~\ref{Cap:matematica}
+apresenta alguns recursos dp \LaTeX\ para escrever express√µes
+matem√°ticas, enquanto o cap√≠tulo~\ref{Cap:figuras} trata da inclus√£o
+de tabelas, gr√°ficos e figuras no documento. O
+cap√≠tulo~\ref{Cap:conclusao}, que faz as vezes de capitulo de
+conclus√µes e perspectivas, mostra alguns exemplos de constru√ß√£o
+autom√°tica de bibliografias utilizando o aplicativo \BibTeX\ e
+menciona fontes adicionais para mais informa√ß√µes.
 
 

@@ -1,32 +1,32 @@
 %%
-%% CapÌtulo 4: Figuras, gr·ficos e tabelas
+%% Cap√≠tulo 4: Figuras, gr√°ficos e tabelas
 %%
 
-\mychapter{Figuras, tabelas e gr·ficos}
+\mychapter{Figuras, tabelas e gr√°ficos}
 \label{Cap:figuras}
 
-Uma das maiores dificuldades na ediÁ„o de textos de qualidade È o
-posicionamento dos elementos gr·ficos: figuras, gr·ficos e
-tabelas. Como estes elementos muitas vezes s„o grandes, aparece o
-dilema sobre o que fazer quando uma quebra de p·gina deveria acontecer
-no meio do elemento. H· duas possibilidades:
+Uma das maiores dificuldades na edi√ß√£o de textos de qualidade √© o
+posicionamento dos elementos gr√°ficos: figuras, gr√°ficos e
+tabelas. Como estes elementos muitas vezes s√£o grandes, aparece o
+dilema sobre o que fazer quando uma quebra de p√°gina deveria acontecer
+no meio do elemento. H√° duas possibilidades:
 \begin{enumerate}
-\item O autor informa exatamente onde o elemento gr·fico deve ficar no
-texto, evitando que quebras de p·ginas aconteÁam no meio de um
-elemento. O problema com esta abordagem È que todo o trabalho de
+\item O autor informa exatamente onde o elemento gr√°fico deve ficar no
+texto, evitando que quebras de p√°ginas aconte√ßam no meio de um
+elemento. O problema com esta abordagem √© que todo o trabalho de
 posicionamento pode ser perdido caso se inclua ou se exclua algum
 texto ou elemento.
-\item O editor de texto posiciona os elementos gr·ficos de forma a n„o
-deixar espaÁos em branco nas p·ginas. Estes elementos que podem ser
-posicionados pelo editor s„o conhecidos como \emph{elementos
-flutuantes}. O problema com esta abordagem È que o posicionamento
-adotado pode n„o corresponder ‡s expectativas do autor.
+\item O editor de texto posiciona os elementos gr√°ficos de forma a n√£o
+deixar espa√ßos em branco nas p√°ginas. Estes elementos que podem ser
+posicionados pelo editor s√£o conhecidos como \emph{elementos
+flutuantes}. O problema com esta abordagem √© que o posicionamento
+adotado pode n√£o corresponder √†s expectativas do autor.
 \end{enumerate}
 
 O \LaTeX\ oferece as duas possibilidades de posicionamento. Este
-capÌtulo apresenta exemplos de inclus„o de elementos gr·ficos no
+cap√≠tulo apresenta exemplos de inclus√£o de elementos gr√°ficos no
 texto, bem como algumas ferramentas externas ao \LaTeX\ que podem ser
-utilizadas para ger·-los.
+utilizadas para ger√°-los.
 
 \section{Elementos flutuantes}
 \label{Sec:flutuantes}
@@ -37,60 +37,60 @@ delimitada por \verb|\begin{figure}| e \verb|\end{figure}| ou por
 sugerem, nada obriga que o ambiente \texttt{figure} seja usado para
 delimitar figuras ou que o ambiente \texttt{table} seja usado para
 delimitar tabelas, embora esta seja a escolha quase sempre
-adotada. Estes dois ambientes s„o praticamente equivalentes, com as
-seguintes diferenÁas:
+adotada. Estes dois ambientes s√£o praticamente equivalentes, com as
+seguintes diferen√ßas:
 \begin{itemize}
 \item os dois ambientes usam contadores diferentes para numerar os
 elementos flutuantes;
-\item os ambientes \texttt{figure} ser„o incluÌdos na
-\texttt{listoffigures}, enquanto os ambientes \texttt{table} ser„o
-incluÌdos na \texttt{listoftables};
+\item os ambientes \texttt{figure} ser√£o inclu√≠dos na
+\texttt{listoffigures}, enquanto os ambientes \texttt{table} ser√£o
+inclu√≠dos na \texttt{listoftables};
 \item as legendas (\texttt{caption}'s) dos ambientes \texttt{figure}
-ser„o precedidas da palavra ``Figura \dots'', enquanto as legendas dos
-ambientes \texttt{table} ser„o precedidas da palavra ``Tabela \dots''.
+ser√£o precedidas da palavra ``Figura \dots'', enquanto as legendas dos
+ambientes \texttt{table} ser√£o precedidas da palavra ``Tabela \dots''.
 Estas duas palavras podem ser alteradas pelo autor.
 \end{itemize}
 Para ilustrar o fato de que estes ambientes podem conter virtualmente
-qualquer coisa, a figura~\ref{Fig:textoflutuante} contÈm um texto que
-foi tornado flutuante por ser incluÌdo em um ambiente \texttt{figure}
+qualquer coisa, a figura~\ref{Fig:textoflutuante} cont√©m um texto que
+foi tornado flutuante por ser inclu√≠do em um ambiente \texttt{figure}
 e as tabelas \ref{Tab:equacaoflutuante} e \ref{Tab:equacaoflutuante2}
-contÍm expressıes matem·ticas flutuantes, incluÌdas em um ambiente
+cont√™m express√µes matem√°ticas flutuantes, inclu√≠das em um ambiente
 \texttt{table}. A tabela (\texttt{table}) \ref{Tab:submultilinhas} na
-p·gina \pageref{Tab:submultilinhas} tambÈm n„o contÈm uma tabela no
+p√°gina \pageref{Tab:submultilinhas} tamb√©m n√£o cont√©m uma tabela no
 sentido estrito do termo, mas sim uma linha de texto formada por duas
-\texttt{minipage}'s separadas por um espaÁo horizontal. A primeira
-\texttt{minipage} contÈm um trecho de cÛdigo fonte e a segunda, o
-resultado produzido (uma express„o matem·tica multialinhada).
+\texttt{minipage}'s separadas por um espa√ßo horizontal. A primeira
+\texttt{minipage} cont√©m um trecho de c√≥digo fonte e a segunda, o
+resultado produzido (uma express√£o matem√°tica multialinhada).
 
 \begin{figure}[tbp]
-\caption{Trecho de \emph{Os LusÌadas}, de Luis de Camıes}
+\caption{Trecho de \emph{Os Lus√≠adas}, de Luis de Cam√µes}
 \label{Fig:textoflutuante}
 % hrule - linha horizontal
 \hrule
-% As minipage's s„o muito ˙teis para se colocar duas coisas na mesma linha
+% As minipage's s√£o muito √∫teis para se colocar duas coisas na mesma linha
 \begin{minipage}{0.45\linewidth}
-% flushleft - alinha ‡ esquerda
+% flushleft - alinha √† esquerda
 \begin{flushleft}
-As armas e os barıes assinalados\\
+As armas e os bar√µes assinalados\\
 Que da ocidental praia lusitana\\
 Por mares nunca dantes navegados\\
-Passaram ainda alÈm da Trapobana\\
-Em perigos e guerras esforÁados\\
-Mais do que prometia a forÁa humana\\
+Passaram ainda al√©m da Trapobana\\
+Em perigos e guerras esfor√ßados\\
+Mais do que prometia a for√ßa humana\\
 Entre gente remota edificaram\\
 Novo reino, que tanto sublimaram
 \end{flushleft}
 \end{minipage}
 \hfill
 \begin{minipage}{0.45\linewidth}
-% flushright - alinha ‡ direita
+% flushright - alinha √† direita
 \begin{flushright}
-E tambÈm as memÛrias gloriosas\\
+E tamb√©m as mem√≥rias gloriosas\\
 Daqueles reis que foram dilatando\\
-A FÈ, o ImpÈrio, as terras viciosas\\
-De ¡frica e ¡sia andaram devastando,\\
+A F√©, o Imp√©rio, as terras viciosas\\
+De √Åfrica e √Åsia andaram devastando,\\
 E aqueles que por obras valerosas\\
-Se v„o da lei da morte libertando:\\
+Se v√£o da lei da morte libertando:\\
 Cantando espalharei por toda parte,\\
 Se a tanto me ajudar o engenho e arte.
 \end{flushright}
@@ -99,14 +99,14 @@ Se a tanto me ajudar o engenho e arte.
 \end{figure}
 
 \begin{table}[bp]
-% As minipage's s„o muito ˙teis para se colocar duas coisas na mesma linha
+% As minipage's s√£o muito √∫teis para se colocar duas coisas na mesma linha
 \begin{minipage}[b]{0.45\linewidth}
 \begin{center}
 \[
 ax^2 + bx + c = 0
 \]
 \end{center}
-\caption{EquaÁ„o de segundo grau}
+\caption{Equa√ß√£o de segundo grau}
 \label{Tab:equacaoflutuante}
 \end{minipage}
 \hfill
@@ -116,83 +116,83 @@ ax^2 + bx + c = 0
 x = \frac{-b\pm\sqrt{b^2-4ac}}{2a}
 \]
 \end{center}
-\caption{RaÌzes da equaÁ„o da tabela~\ref{Tab:equacaoflutuante}}
+\caption{Ra√≠zes da equa√ß√£o da tabela~\ref{Tab:equacaoflutuante}}
 \label{Tab:equacaoflutuante2}
 \end{minipage}
 \end{table}
 
-… importante ressaltar que o que È numerado È o \texttt{caption} e n„o
+√â importante ressaltar que o que √© numerado √© o \texttt{caption} e n√£o
 a \texttt{figure} ou a \texttt{table}. Portanto, o \texttt{label} deve
-ser colocado sempre apÛs o \texttt{caption} ao qual ele se
+ser colocado sempre ap√≥s o \texttt{caption} ao qual ele se
 refere. Conforme ilustram as tabelas \ref{Tab:equacaoflutuante} e
 \ref{Tab:equacaoflutuante2}, uma mesma \texttt{figure} ou
 \texttt{table} pode ter mais de um ou nenhum \texttt{caption}.
-O \texttt{caption} pode ser colocado antes do conte˙do flutuante, como
+O \texttt{caption} pode ser colocado antes do conte√∫do flutuante, como
 na figura \ref{Fig:textoflutuante}, ou depois, como nas tabelas
 \ref{Tab:equacaoflutuante} e \ref{Tab:equacaoflutuante2}. Nos
-documentos do PPgEE, o padr„o È sempre posicionar o \texttt{caption}
+documentos do PPgEE, o padr√£o √© sempre posicionar o \texttt{caption}
 abaixo das figuras e das tabelas.
 
 \subsection{Posicionamento dos elementos flutuantes}
 \label{Sec:posicionamento}
 
 Em cada \verb|\begin{figure}| ou \verb|\begin{table}| pode-se incluir
-um par‚metro opcional com as opÁıes de posicionamento para este
-elemento flutuante. Par‚metros adicionais de comandos \LaTeX\ s„o
-sempre fornecidos entre colchetes \texttt{[]}, enquanto os par‚metros
-obrigatÛrios aparecem entre chaves \verb|{}|. As opÁıes disponÌveis
+um par√¢metro opcional com as op√ß√µes de posicionamento para este
+elemento flutuante. Par√¢metros adicionais de comandos \LaTeX\ s√£o
+sempre fornecidos entre colchetes \texttt{[]}, enquanto os par√¢metros
+obrigat√≥rios aparecem entre chaves \verb|{}|. As op√ß√µes dispon√≠veis
 incluem as seguintes:
 \begin{itemize}
-\item[\tt h] O elemento pode ser posicionado na mesma posiÁ„o em que ele
-aparece no cÛdigo fonte do texto.
-\item[\tt t] O elemento pode ser posicionado no topo de uma p·gina.
-\item[\tt b] O elemento pode ser posicionado no fim de uma p·gina.
-\item[\tt p] O elemento pode ser incluÌdo em uma p·gina formada sÛ por
+\item[\tt h] O elemento pode ser posicionado na mesma posi√ß√£o em que ele
+aparece no c√≥digo fonte do texto.
+\item[\tt t] O elemento pode ser posicionado no topo de uma p√°gina.
+\item[\tt b] O elemento pode ser posicionado no fim de uma p√°gina.
+\item[\tt p] O elemento pode ser inclu√≠do em uma p√°gina formada s√≥ por
 flutuantes.
-\item[\tt !] Normalmente o \LaTeX\ faz algumas consideraÁıes de ordem
-estÈtica no posicionamento dos flutuantes, o que ‡s vezes faz com que
-alguns elementos sejam posicionados muito longe de onde s„o citados,
-principalmente se vocÍ n„o incluir a opÁ„o \texttt{p}. Para fazer com
-que as consideraÁıes estÈticas n„o sejam levadas em conta para um dado
-elemento, inclua a opÁ„o \texttt{!}.
+\item[\tt !] Normalmente o \LaTeX\ faz algumas considera√ß√µes de ordem
+est√©tica no posicionamento dos flutuantes, o que √†s vezes faz com que
+alguns elementos sejam posicionados muito longe de onde s√£o citados,
+principalmente se voc√™ n√£o incluir a op√ß√£o \texttt{p}. Para fazer com
+que as considera√ß√µes est√©ticas n√£o sejam levadas em conta para um dado
+elemento, inclua a op√ß√£o \texttt{!}.
 \end{itemize}
 
 \section{Tabelas em \LaTeX}
 \label{Sec:tabelas}
 
-Tabelas s„o construÌdas com comandos prÛprios do \LaTeX, notadamente o
+Tabelas s√£o constru√≠das com comandos pr√≥prios do \LaTeX, notadamente o
 ambiente \texttt{tabular}. Nada obriga a que o ambiente
 \texttt{tabular} esteja sempre posicionado em um elemento
-flutuante. Se vocÍ quiser impor que uma tabela fique obrigatoriamente
-em uma determinada posiÁ„o do texto, basta n„o colocar o
-\texttt{tabular} dentro de um \texttt{table}. Tabelas podem atÈ ser
-incluÌdas no meio de uma frase.  Por exemplo, eu posso dizer que se um
-jogo da velha est· na configuraÁ„o \textsf{\tiny\begin{tabular}{c|c|c}
+flutuante. Se voc√™ quiser impor que uma tabela fique obrigatoriamente
+em uma determinada posi√ß√£o do texto, basta n√£o colocar o
+\texttt{tabular} dentro de um \texttt{table}. Tabelas podem at√© ser
+inclu√≠das no meio de uma frase.  Por exemplo, eu posso dizer que se um
+jogo da velha est√° na configura√ß√£o \textsf{\tiny\begin{tabular}{c|c|c}
 x & & x \\ \hline & & o \\ \hline x & o & \end{tabular}} e se o
-jogador ``\textsf{x}'' sabe jogar, ent„o o jogador ``\textsf{o}'' ir·
-perder, independentemente da jogada que faÁa.
+jogador ``\textsf{x}'' sabe jogar, ent√£o o jogador ``\textsf{o}'' ir√°
+perder, independentemente da jogada que fa√ßa.
 
-O ambiente \texttt{tabular} tem um par‚metro obrigatÛrio que indica o
-n˙mero de colunas da tabela e o posicionamento dos objetos em cada
+O ambiente \texttt{tabular} tem um par√¢metro obrigat√≥rio que indica o
+n√∫mero de colunas da tabela e o posicionamento dos objetos em cada
 coluna. Por exemplo, uma tabela criada com \verb|\begin{tabular}{lcr}|
-ter· trÍs colunas; o texto ser· alinhado ‡ esquerda na primeira
-coluna, centralizado na segunda e alinhado ‡ direita na
-terceira. Podem ser incluÌdos objetos que ocupam mais de uma linha
+ter√° tr√™s colunas; o texto ser√° alinhado √† esquerda na primeira
+coluna, centralizado na segunda e alinhado √† direita na
+terceira. Podem ser inclu√≠dos objetos que ocupam mais de uma linha
 (comando \texttt{multirow}) ou mais de uma coluna (comando
-\texttt{multicolumn}). Neste ˙ltimo caso, tambÈm È possÌvel mudar o
+\texttt{multicolumn}). Neste √∫ltimo caso, tamb√©m √© poss√≠vel mudar o
 alinhamento do texto. Exemplos podem ser vistos nas tabelas
 \ref{Tab:multilinhas} e \ref{Tab:submultilinhas}, na
-p·gina~\pageref{Tab:multilinhas}.
+p√°gina~\pageref{Tab:multilinhas}.
 
-Com o pacote \texttt{tabularx}, alÈm das opÁıes normais de
+Com o pacote \texttt{tabularx}, al√©m das op√ß√µes normais de
 posicionamento de colunas (\texttt{lcr}), pode-se incluir
 automaticamente um texto qualquer antes de cada elemento da coluna
 (\verb|>{}|). Este recurso foi utilizado nas tabelas
 \ref{Tab:multilinhas} e \ref{Tab:submultilinhas} para fazer
 com que todos os textos de algumas colunas fossem automaticamente
-escritos na fonte \texttt{tt}. AlÈm disso, podem-se criar colunas de
+escritos na fonte \texttt{tt}. Al√©m disso, podem-se criar colunas de
 largura fixa e/ou de largura que se ajustam para que a tabela ocupe
-toda a largura desejada, alÈm do estilo tradicional de coluna que
+toda a largura desejada, al√©m do estilo tradicional de coluna que
 assume a largura suficiente para conter seus elementos. Exemplos de
 colunas com diferentes larguras e alinhamentos podem ser vistos na
 tabela \ref{Tab:larguracolunas}.
@@ -200,22 +200,22 @@ tabela \ref{Tab:larguracolunas}.
 \begin{table}[htbp]
 \begin{tabularx}{\linewidth}{|p{3cm}|X|l|} \hline
 COLUNA p & COLUNA X & COLUNA l \\ \hline
-Largura fixa (n„o depende do conte˙do) &
-ExpandÌvel &
-Ajust·vel \\ \hline
+Largura fixa (n√£o depende do conte√∫do) &
+Expand√≠vel &
+Ajust√°vel \\ \hline
 Alinhada no topo &
-Alinhada ‡ esquerda &
-Alinhada ‡ esquerda \\ \hline
+Alinhada √† esquerda &
+Alinhada √† esquerda \\ \hline
 \end{tabularx}
 \\[0.5cm]
 \begin{tabularx}{\linewidth}{|b{3cm}|C|r|} \hline
 COLUNA b & COLUNA C (ver \texttt{comandos.tex}) & COLUNA r \\ \hline
-Largura fixa (n„o depende do conte˙do) &
-ExpandÌvel &
-Ajust·vel \\ \hline
+Largura fixa (n√£o depende do conte√∫do) &
+Expand√≠vel &
+Ajust√°vel \\ \hline
 Alinhada na base &
 Centralizada &
-Alinhada ‡ direita \\ \hline
+Alinhada √† direita \\ \hline
 \end{tabularx}
 \caption{Tabelas com colunas de diferentes larguras e alinhamentos}
 \label{Tab:larguracolunas}
@@ -224,71 +224,71 @@ Alinhada ‡ direita \\ \hline
 \section{Figuras em \LaTeX}
 \label{Sec:figuras}
 
-As figuras (imagens, desenhos, gr·ficos, etc.) devem ser produzidas
+As figuras (imagens, desenhos, gr√°ficos, etc.) devem ser produzidas
 por ferramentas externas ao \LaTeX, salvas em um arquivo e inseridas
 no texto usando o comando \texttt{includegraphics}. Da mesma forma
 que as tabelas, as figuras podem ser flutuantes, caso sejam
-inseridas dentro de um ambiente \texttt{figure}, ou ter uma posiÁ„o
+inseridas dentro de um ambiente \texttt{figure}, ou ter uma posi√ß√£o
 fixa no texto (como aqui: \includegraphics{tex/04-figuras/figuras/eu}).
 
-O formato em que vocÍ deve salvar os arquivos das figuras para que
-possa incluÌ-las no texto depende de como vocÍ pretende compilar
-o cÛdigo fonte:
+O formato em que voc√™ deve salvar os arquivos das figuras para que
+possa inclu√≠-las no texto depende de como voc√™ pretende compilar
+o c√≥digo fonte:
 \begin{itemize}
 \item se o texto vai ser compilado com \texttt{latex}, todos os
 arquivos devem estar no formato EPS (\emph{Encapsulated PostScipt});
 \item se o texto vai ser compilado com \texttt{pdflatex}, os
-arquivos devem estar nos formatos PDF ou JPEG (outros formatos s„o
-aceitos, mas estes s„o os recomend·veis).
+arquivos devem estar nos formatos PDF ou JPEG (outros formatos s√£o
+aceitos, mas estes s√£o os recomend√°veis).
 \end{itemize}
-… aconselh·vel que vocÍ n„o inclua a terminaÁ„o no nome do arquivo que
-È par‚metro para o comando \texttt{includegraphics}. Isto porque, de
-acordo com a forma como o texto est· sendo compilado, o \LaTeX\
-acrescenta a terminaÁ„o adequada. Por exemplo, caso seu texto inclua o
-comando \verb|\includegraphics{eu}|, o \LaTeX\ procurar· o arquivo
+√â aconselh√°vel que voc√™ n√£o inclua a termina√ß√£o no nome do arquivo que
+√© par√¢metro para o comando \texttt{includegraphics}. Isto porque, de
+acordo com a forma como o texto est√° sendo compilado, o \LaTeX\
+acrescenta a termina√ß√£o adequada. Por exemplo, caso seu texto inclua o
+comando \verb|\includegraphics{eu}|, o \LaTeX\ procurar√° o arquivo
 \texttt{eu.eps} caso esteja sendo chamado via \texttt{latex} ou um dos
 arquivos \texttt{eu.pdf} ou \texttt{eu.jpg} caso esteja sendo chamado
 via \texttt{pdflatex}.
 
 As figuras podem ser divididas em dois grandes grupos:
 \begin{itemize}
-\item As imagens e fotos, que normalmente correspondem a visıes reais
-do mundo e s„o obtidas por c‚meras digitais ou
+\item As imagens e fotos, que normalmente correspondem a vis√µes reais
+do mundo e s√£o obtidas por c√¢meras digitais ou
 assemelhados. Caracterizam-se por conterem grandes quantidades de
 nuances, texturas e cores.
-\item As figuras sintÈticas, normalmente produzidas utilizando
-\emph{softwares} dedicados. Geralmente contÍm figuras geomÈtricas
+\item As figuras sint√©ticas, normalmente produzidas utilizando
+\emph{softwares} dedicados. Geralmente cont√™m figuras geom√©tricas
 (linhas, quadrados, etc.), textos e poucas cores e texturas. Neste
-grupo, para efeito de discuss„o das ferramentas de produÁ„o, podem-se
+grupo, para efeito de discuss√£o das ferramentas de produ√ß√£o, podem-se
 identificar duas categorias:
 \begin{itemize}
 \item Os desenhos e esquemas: diagramas de blocos, organogramas e
-fluxogramas, representaÁıes esquem·ticas, etc.
-\item Os gr·ficos: representaÁıes gr·ficas de valores ou funÁıes
-matem·ticas.
+fluxogramas, representa√ß√µes esquem√°ticas, etc.
+\item Os gr√°ficos: representa√ß√µes gr√°ficas de valores ou fun√ß√µes
+matem√°ticas.
 \end{itemize}
 \end{itemize}
 
 \subsection{Imagens e fotos}
 \label{Sec:imagens}
 
-As imagens e fotos normalmente sÛ podem ser armazenadas em formatos
+As imagens e fotos normalmente s√≥ podem ser armazenadas em formatos
 que representam cada \emph{pixel} da imagem separadamente,
-eventualmente com algum tipo de compress„o. Os formatos JPEG, GIF,
-TIF, PNM (PBM, PGM ou PPM), BMP (Bitmap) e PNG, entre outros, s„o
-todos desta categoria.  Se sua figura est· em algum destes formatos,
-vocÍ deve convertÍ-la para EPS (se usar \texttt{latex}) ou para JPEG
-(se usar \texttt{pdflatex}) para poder incluÌ-la no documento \LaTeX.
+eventualmente com algum tipo de compress√£o. Os formatos JPEG, GIF,
+TIF, PNM (PBM, PGM ou PPM), BMP (Bitmap) e PNG, entre outros, s√£o
+todos desta categoria.  Se sua figura est√° em algum destes formatos,
+voc√™ deve convert√™-la para EPS (se usar \texttt{latex}) ou para JPEG
+(se usar \texttt{pdflatex}) para poder inclu√≠-la no documento \LaTeX.
 
-A quase totalidade dos \emph{softwares} de visualizaÁ„o de imagens
-permite salv·-las em m˙ltiplos formatos, geralmente incluindo JPEG e
-EPS. No Unix, vocÍ dispıe ainda de v·rios programas para fazer a
-convers„o em comandos de linha: \texttt{jpegtopnm},
+A quase totalidade dos \emph{softwares} de visualiza√ß√£o de imagens
+permite salv√°-las em m√∫ltiplos formatos, geralmente incluindo JPEG e
+EPS. No Unix, voc√™ disp√µe ainda de v√°rios programas para fazer a
+convers√£o em comandos de linha: \texttt{jpegtopnm},
 \texttt{pnmtojpeg}, \texttt{pnmtops}, \texttt{gif2ps},
 \texttt{giftopnm}, \texttt{tiff2ps}, \texttt{tifftopnm},
 \texttt{bmptopnm} e \texttt{pngtopnm}, entre outros.
 
-A figura \ref{Fig:belmonte} mostra um exemplo de inclus„o de uma
+A figura \ref{Fig:belmonte} mostra um exemplo de inclus√£o de uma
 imagem no texto \LaTeX.
 
 \begin{figure}[htbp!] \begin{center}
@@ -298,37 +298,37 @@ imagem no texto \LaTeX.
 \label{Fig:belmonte}
 \end{center} \end{figure}
 
-\subsection{Figuras sintÈticas}
+\subsection{Figuras sint√©ticas}
 \label{Sec:figsinteticas}
 
-As figuras sintÈticas podem ser armazenadas em formato
+As figuras sint√©ticas podem ser armazenadas em formato
 \emph{pixel}-a-\emph{pixel}, como se fossem uma imagem, ou em
 formato vetorial. No formato vetorial as primitivas que formam a
-figura (linhas, textos, etc.) s„o descritas pelos par‚metros que as
-caracterizam (ponto de inÌcio e fim, \emph{string} e posiÁ„o do texto,
-etc.). As figuras em formato vetorial s„o mais adequadas pois
+figura (linhas, textos, etc.) s√£o descritas pelos par√¢metros que as
+caracterizam (ponto de in√≠cio e fim, \emph{string} e posi√ß√£o do texto,
+etc.). As figuras em formato vetorial s√£o mais adequadas pois
 usualmente correspondem a arquivos menores e a qualidade da imagem
-n„o sofre perdas ao se aumentar ou diminuir o tamanho da figura.
+n√£o sofre perdas ao se aumentar ou diminuir o tamanho da figura.
 
-Para inclus„o no \LaTeX, os formatos PDF e EPS s„o os ˙nicos que podem
+Para inclus√£o no \LaTeX, os formatos PDF e EPS s√£o os √∫nicos que podem
 representar figuras no formato vetorial. Nem toda figura salva nestes
-formatos, entretanto, È necessariamente vetorial, pois tanto o PDF
+formatos, entretanto, √© necessariamente vetorial, pois tanto o PDF
 quanto o EPS podem representar tanto figuras em formato
 \emph{pixel}-a-\emph{pixel} quanto figuras em formato vetorial. Para
-que sua figura seja vetorial, È necess·rio que o \emph{software} que a
+que sua figura seja vetorial, √© necess√°rio que o \emph{software} que a
 gerou tenha a capacidade de produzi-las.
 
 Para demonstrar a melhor qualidade das figuras em formato vetorial,
 nas figuras \ref{Fig:bigvetorial} e \ref{Fig:bigbitmap} se mostra em
 tamanho natural um mesmo diagrama nos formatos vetorial e de
 \emph{pixels}. Nas figuras \ref{Fig:bigvetorialreduzida} e
-\ref{Fig:bigbitmapreduzida} estas mesmas figuras s„o apresentadas
-com uma reduÁ„o de 50\%, utilizando o par‚metro \texttt{scale} do
-\texttt{includegraphics}. J· nas figuras \ref{Fig:smallvetorial} e
+\ref{Fig:bigbitmapreduzida} estas mesmas figuras s√£o apresentadas
+com uma redu√ß√£o de 50\%, utilizando o par√¢metro \texttt{scale} do
+\texttt{includegraphics}. J√° nas figuras \ref{Fig:smallvetorial} e
 \ref{Fig:smallbitmap} o diagrama original foi reduzido, de forma que
-seu tamanho natural È menor. Nas figuras
+seu tamanho natural √© menor. Nas figuras
 \ref{Fig:smallvetorialampliada} e \ref{Fig:smallbitmapampliada}
-este diagrama pequeno est· aumentado de um fator arbitr·rio, calculado
+este diagrama pequeno est√° aumentado de um fator arbitr√°rio, calculado
 pelo \texttt{includegraphics} para que a imagem ocupe toda a largura
 da linha.
 
@@ -369,11 +369,11 @@ da linha.
 \end{center} \end{figure}
 
 Nota-se que no formato vetorial as
-linhas mantÍm a espessura mesmo quando se fazem
-ampliaÁıes ou reduÁıes. J· no formato de \emph{pixels}
-as linhas ficam mais claras (cinzas, ao invÈs de pretas) apÛs as
-reduÁıes e mais grossas apÛs as ampliaÁıes, alÈm de uma perda geral
-de definiÁ„o da imagem.
+linhas mant√™m a espessura mesmo quando se fazem
+amplia√ß√µes ou redu√ß√µes. J√° no formato de \emph{pixels}
+as linhas ficam mais claras (cinzas, ao inv√©s de pretas) ap√≥s as
+redu√ß√µes e mais grossas ap√≥s as amplia√ß√µes, al√©m de uma perda geral
+de defini√ß√£o da imagem.
 
 \section{Ferramentas para desenhos e esquemas}
 \label{Sec:desenhos}
@@ -384,15 +384,15 @@ No Unix, pode-se utilizar o \texttt{xfig}, que exporta imagens em
 muitos formatos, inclusive nos vetoriais (PDF e EPS). Os diagramas das
 figuras \ref{Fig:bigvetorial} a \ref{Fig:smallbitmapampliada} foram
 desenhados e exportados no \texttt{xfig}. O arquivo fonte
-correspondente È o \texttt{diagrama.fig}, no diretÛrio
+correspondente √© o \texttt{diagrama.fig}, no diret√≥rio
 \texttt{figuras}.
 
-A possibilidade de salvar figuras em modo vetorial impıe que alguns
-recursos para desenho de imagens n„o sejam oferecidos. Um deles È o
-desenho a m„o-livre, j· que seria impossÌvel descrever a curva obtida
-em termos de figuras geomÈtricas b·sicas. Outro recurso inexistente È
-o de preencher uma regi„o com uma determinada cor. Esta ˙ltima
-limitaÁ„o muitas vezes pode ser contornada utilizando-se a noÁ„o de
+A possibilidade de salvar figuras em modo vetorial imp√µe que alguns
+recursos para desenho de imagens n√£o sejam oferecidos. Um deles √© o
+desenho a m√£o-livre, j√° que seria imposs√≠vel descrever a curva obtida
+em termos de figuras geom√©tricas b√°sicas. Outro recurso inexistente √©
+o de preencher uma regi√£o com uma determinada cor. Esta √∫ltima
+limita√ß√£o muitas vezes pode ser contornada utilizando-se a no√ß√£o de
 profundidade.  Por exemplo, para desenhar uma figura vazado e
 preenchido de azul, pode-se desenhar a figura externa preenchido de
 azul sobre o qual se desenha a figura interna preenchido de branco,
@@ -404,29 +404,29 @@ como mostram os exemplos da figura~\ref{Fig:circulo}.
 \label{Fig:circulo}
 \end{center} \end{figure}
 
-A noÁ„o de profundidade no \texttt{xfig} foi exaustivamente utilizada
-para desenhar os sÌmbolos da UFRN e do PPgEE que podem ser vistos na
-p·gina de rosto deste documento. Os arquivos \texttt{xfig}
-correspondentes s„o \texttt{UFRN.fig} e \texttt{PPgEE.fig}. Ela tambÈm
-pode ser utilizada para mesclar imagens com figuras sintÈticas, como
+A no√ß√£o de profundidade no \texttt{xfig} foi exaustivamente utilizada
+para desenhar os s√≠mbolos da UFRN e do PPgEE que podem ser vistos na
+p√°gina de rosto deste documento. Os arquivos \texttt{xfig}
+correspondentes s√£o \texttt{UFRN.fig} e \texttt{PPgEE.fig}. Ela tamb√©m
+pode ser utilizada para mesclar imagens com figuras sint√©ticas, como
 na figura \ref{Fig:pensador} (veja arquivo \texttt{figuras/pensador.fig}).
 
 \begin{figure}[htb] \begin{center}
 \includegraphics{tex/04-figuras/figuras/pensador}
-\caption{Imagem mesclada com elementos sintÈticos}
+\caption{Imagem mesclada com elementos sint√©ticos}
 \label{Fig:pensador}
 \end{center} \end{figure}
 
-Outra possibilidade oferecida pelo \texttt{xfig} È a inclus„o de comandos
+Outra possibilidade oferecida pelo \texttt{xfig} √© a inclus√£o de comandos
 \LaTeX\ dentro da figura. Para utilizar este recurso,
 marque no \texttt{xfig} os textos que devem ser interpretados como
 comandos \LaTeX\ com o \emph{flag} \texttt{special} e exporte a figura
 no modo \emph{Combinado PS/Latex} ou \emph{Combinado PDF/Latex}. Veja
-um exemplo na figura \ref{Fig:combinado}; note que o arquivo È incluÌdo com
-\verb|\input{}| e n„o com \verb|\includegraphics{}|.
+um exemplo na figura \ref{Fig:combinado}; note que o arquivo √© inclu√≠do com
+\verb|\input{}| e n√£o com \verb|\includegraphics{}|.
 
-% Note que foi redefinido um comando aqui no texto para ser incluÌdo
-% na figura. Isto È para evitar digitaÁ„o de expressıes LaTeX muito
+% Note que foi redefinido um comando aqui no texto para ser inclu√≠do
+% na figura. Isto √© para evitar digita√ß√£o de express√µes LaTeX muito
 % grandes dentro do xfig
 \newcommand{\formulagrande}{$\frac{G_3G_4}{1-G_3G_4H_1}$}
 \begin{figure}[htb] \begin{center}
@@ -436,43 +436,43 @@ um exemplo na figura \ref{Fig:combinado}; note que o arquivo È incluÌdo com
 \label{Fig:combinado}
 \end{center} \end{figure}
 
-\section{Ferramentas para gr·ficos}
+\section{Ferramentas para gr√°ficos}
 \label{Sec:graficos}
 
-Gr·ficos devem ser gerados com aplicativos capazes de exportar o
+Gr√°ficos devem ser gerados com aplicativos capazes de exportar o
 resultado nos formatos EPS ou PDF, preferencialmente em formato
-vetorial. Os conhecidos programas \emph{Scilab} e \emph{Matlab} tÍm
-esta capacidade. Se vocÍ deseja algo mais simples, a ferramenta
-\textit{GNUplot} È uma das mais utilizadas no Unix para a geraÁ„o de
-gr·ficos de funÁıes matem·ticas.
+vetorial. Os conhecidos programas \emph{Scilab} e \emph{Matlab} t√™m
+esta capacidade. Se voc√™ deseja algo mais simples, a ferramenta
+\textit{GNUplot} √© uma das mais utilizadas no Unix para a gera√ß√£o de
+gr√°ficos de fun√ß√µes matem√°ticas.
 
-Uma vez gerados, gr·ficos s„o inseridos no texto tal como figuras. A
-figura~\ref{fig:grafico} apresenta um gr·fico gerado atravÈs do
+Uma vez gerados, gr√°ficos s√£o inseridos no texto tal como figuras. A
+figura~\ref{fig:grafico} apresenta um gr√°fico gerado atrav√©s do
 comando de linha \texttt{gnuplot grafico.gnuplot}. Este arquivo
-\texttt{grafico.gnuplot}, que contÈm uma sÈrie de comandos do
-\textit{GNUplot}, est· no diretÛrio \texttt{figuras}.
+\texttt{grafico.gnuplot}, que cont√©m uma s√©rie de comandos do
+\textit{GNUplot}, est√° no diret√≥rio \texttt{figuras}.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics{tex/04-figuras/figuras/grafico}
-\caption{Exemplo de gr·fico de funÁıes matem·ticas}
+\caption{Exemplo de gr√°fico de fun√ß√µes matem√°ticas}
 \label{fig:grafico}
 \end{figure}
 
-\section{Conclusıes}
+\section{Conclus√µes}
 
-Ferramentas de desenho capazes de gerar a saÌda em formato vetorial
-s„o mais difÌceis de usar e parecem ser dotadas de menos recursos do
-que outras que sÛ exportam seus resultados como imagens de
-\emph{pixels}.  Isto se deve ‡ necessidade de descrever todos os
-elementos da imagem sob a forma de primitivas parametriz·veis para
-permitir que elas sejam escal·veis ‡ vontade e export·veis para
+Ferramentas de desenho capazes de gerar a sa√≠da em formato vetorial
+s√£o mais dif√≠ceis de usar e parecem ser dotadas de menos recursos do
+que outras que s√≥ exportam seus resultados como imagens de
+\emph{pixels}.  Isto se deve √† necessidade de descrever todos os
+elementos da imagem sob a forma de primitivas parametriz√°veis para
+permitir que elas sejam escal√°veis √† vontade e export√°veis para
 qualquer formato desejado.
 
 Entretanto, a qualidade visual das figuras obtidas e a sua
-reusabilidade È muito maior. A comparaÁ„o È aproximadamente a mesma
-que a entre textos produzidos em \LaTeX\ e em editores gr·ficos. Desta
-forma, na medida do possÌvel, tente conjugar a escrita do documento
-\LaTeX\ com a utilizaÁ„o de alguma ferramenta de desenho vetorial.
+reusabilidade √© muito maior. A compara√ß√£o √© aproximadamente a mesma
+que a entre textos produzidos em \LaTeX\ e em editores gr√°ficos. Desta
+forma, na medida do poss√≠vel, tente conjugar a escrita do documento
+\LaTeX\ com a utiliza√ß√£o de alguma ferramenta de desenho vetorial.
 
 % LocalWords:  editadas PS

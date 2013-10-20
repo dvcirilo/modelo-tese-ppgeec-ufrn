@@ -1,16 +1,16 @@
 %%
-%% CapÌtulo 2: Expressıes matem·ticas
+%% Cap√≠tulo 2: Express√µes matem√°ticas
 %%
 
-\mychapter{Expressıes matem·ticas}
+\mychapter{Express√µes matem√°ticas}
 \label{Cap:matematica}
 
-\LaTeX~È insuper·vel no processamento de expressıes matem·ticas. Expressıes
-simples como $2^{n}$ podem ser editadas no prÛprio texto. EquaÁıes
+\LaTeX~√© insuper√°vel no processamento de express√µes matem√°ticas. Express√µes
+simples como $2^{n}$ podem ser editadas no pr√≥prio texto. Equa√ß√µes
 complexas como:
-% eqnarray È o comando LaTeX de base para expressıes multilinhas com
+% eqnarray √© o comando LaTeX de base para express√µes multilinhas com
 % alinhamento. O & indica o ponto onde todas as linhas devem ser
-% alinhadas. Neste capÌtulo ser„o apresentadas outras opÁıes de alinhamento
+% alinhadas. Neste cap√≠tulo ser√£o apresentadas outras op√ß√µes de alinhamento
 \begin{eqnarray} \label{eq:PDF:RSR}
   p \left( \gamma \right) & = & \frac{1}{2} \sqrt{\frac{M}{\gamma \bar{\gamma}_{b}}} \frac{1}{ \prod_{i=1}^M {\sqrt{\tilde{\gamma}_i}}}
   \int_0^{\sqrt{M \delta}} \int_0^{\sqrt{M \delta} - r_M } \cdots
@@ -42,69 +42,69 @@ ou:
   \, dr_2 \cdots dr_{M-1} \, dr_M \\ \end{array}}
 \end{equation}
 
-% ops, aqui eu deixei uma linha em branco de propÛsito
-s„o automaticamente numeradas e podem ser referenciadas a partir do
-texto. Por exemplo, a equaÁ„o~\ref{eq:TrCGI} È trivialmente derivada
-da equaÁ„o~\ref{eq:PDF:RSR}.
+% ops, aqui eu deixei uma linha em branco de prop√≥sito
+s√£o automaticamente numeradas e podem ser referenciadas a partir do
+texto. Por exemplo, a equa√ß√£o~\ref{eq:TrCGI} √© trivialmente derivada
+da equa√ß√£o~\ref{eq:PDF:RSR}.
 
-No par·grafo anterior foi intencionalmente introduzido um erro. Note
-que o trecho de frase ``s„o automaticamente numeradas\dots'' tem uma
-indentaÁ„o, ou seja, um espaÁo inicial de tabulaÁ„o, como se fosse a
-primeira frase de um novo par·grafo. Na realidade, todo o texto
-anterior constitui um ˙nico par·grafo, no meio do qual se inserem as
-duas equaÁıes. Por esta raz„o, os trechos de frase apÛs as equaÁıes
-n„o devem se iniciar com letra mai˙scula nem ser indentados. …
-importante lembrar que nestas situaÁıes em que frases s„o
-interrompidas por equaÁıes È obrigatÛria a inclus„o de dois pontos no
-fim dos trechos da frase, como em ``\dots EquaÁıes complexas como:'' e
+No par√°grafo anterior foi intencionalmente introduzido um erro. Note
+que o trecho de frase ``s√£o automaticamente numeradas\dots'' tem uma
+indenta√ß√£o, ou seja, um espa√ßo inicial de tabula√ß√£o, como se fosse a
+primeira frase de um novo par√°grafo. Na realidade, todo o texto
+anterior constitui um √∫nico par√°grafo, no meio do qual se inserem as
+duas equa√ß√µes. Por esta raz√£o, os trechos de frase ap√≥s as equa√ß√µes
+n√£o devem se iniciar com letra mai√∫scula nem ser indentados. √â
+importante lembrar que nestas situa√ß√µes em que frases s√£o
+interrompidas por equa√ß√µes √© obrigat√≥ria a inclus√£o de dois pontos no
+fim dos trechos da frase, como em ``\dots Equa√ß√µes complexas como:'' e
 em ``ou:''.
 
-O que gerou este erro de indentaÁ„o? Lembre-se que em \LaTeX\ uma
-linha em branco no cÛdigo fonte indica a separaÁ„o entre dois
-par·grafos. A causa do problema È a linha em branco entre o
-\verb|\end{equation}| e o \texttt{s„o automaticamente
-numeradas}\dots~. Como regra geral, enquanto um par·grafo n„o for
-encerrado, n„o podem ser incluÌdas linhas em branco, mesmo que no meio
-do par·grafo existam equaÁıes, figuras, notas de rodapÈ, etc.
+O que gerou este erro de indenta√ß√£o? Lembre-se que em \LaTeX\ uma
+linha em branco no c√≥digo fonte indica a separa√ß√£o entre dois
+par√°grafos. A causa do problema √© a linha em branco entre o
+\verb|\end{equation}| e o \texttt{s√£o automaticamente
+numeradas}\dots~. Como regra geral, enquanto um par√°grafo n√£o for
+encerrado, n√£o podem ser inclu√≠das linhas em branco, mesmo que no meio
+do par√°grafo existam equa√ß√µes, figuras, notas de rodap√©, etc.
 
-Pequenas expressıes matem·ticas como $x_0^2$ podem ser inseridas
-diretamente no texto, delimitadas por cifrıes (\texttt{\$}). Deve-se
-evitar este recurso com expressıes muito grandes, como
-% array È o ambiente para fazer coisas como matrizes. … muito similar
-% ao tabular, que ser· explicado no prÛximo capÌtulo, com a diferenÁa
-% que os elementos do array s„o expressıes matem·ticas.
-% Para fazer uma matriz , lembre-se que o array n„o inclui os
-% delimitadores. No caso, nÛs pusemos o array dentro de delimitadores
+Pequenas express√µes matem√°ticas como $x_0^2$ podem ser inseridas
+diretamente no texto, delimitadas por cifr√µes (\texttt{\$}). Deve-se
+evitar este recurso com express√µes muito grandes, como
+% array √© o ambiente para fazer coisas como matrizes. √â muito similar
+% ao tabular, que ser√° explicado no pr√≥ximo cap√≠tulo, com a diferen√ßa
+% que os elementos do array s√£o express√µes matem√°ticas.
+% Para fazer uma matriz , lembre-se que o array n√£o inclui os
+% delimitadores. No caso, n√≥s pusemos o array dentro de delimitadores
 % \left[ e right]. Estes delimitadores desenham um colchete do tamanho
-% necess·rio para incluir a coisa delimitada
+% necess√°rio para incluir a coisa delimitada
 $\left[\begin{array}{cc} 1 & \frac{2}{x+1} \\ -2 &
-1\end{array}\right]^{-1}$, porque o espaÁamento entre as linhas fica
-prejudicado. Para incluir expressıes n„o numeradas maiores, pode-se
+1\end{array}\right]^{-1}$, porque o espa√ßamento entre as linhas fica
+prejudicado. Para incluir express√µes n√£o numeradas maiores, pode-se
 utilizar o par de delimitadores \verb|\[| e \verb|\]|, o que gera
-expressıes centralizadas na p·gina:
+express√µes centralizadas na p√°gina:
 \[
-% Nesta express„o nÛs trocamos o delimitador das matrizes, passando
-% a usar parÍnteses
+% Nesta express√£o n√≥s trocamos o delimitador das matrizes, passando
+% a usar par√™nteses
 \left(\begin{array}{cc}
 1 & \frac{2}{x+1} \\ -2 & 1
 \end{array}\right)^{-1} = \left(\begin{array}{cc}
 \frac{x+1}{x+5} & -\frac{2}{x+5} \\ \frac{2(x+1)}{x+5} & \frac{x+1}{x+5}
 \end{array}\right) \quad
-% quad È uma das formas de incluir espaÁo em expressıes matem·ticas,
-% pois os espaÁos s„o ignorados. quad deve ser usado com moderaÁ„o,
-% pois na maioria dos casos a formataÁ„o do LaTeX È a mais adequada.
-% Muitos usos de quad podem ser substituÌdos por ambientes de alinhamento,
+% quad √© uma das formas de incluir espa√ßo em express√µes matem√°ticas,
+% pois os espa√ßos s√£o ignorados. quad deve ser usado com modera√ß√£o,
+% pois na maioria dos casos a formata√ß√£o do LaTeX √© a mais adequada.
+% Muitos usos de quad podem ser substitu√≠dos por ambientes de alinhamento,
 % explicados a seguir
 \text{se} \quad x \neq -1 \quad \text{e} \quad x \neq -5
 \]
 
-Um erro comum em expressıes matem·ticas È o de digitar os nomes de
-funÁıes diretamente, sem utilizar os comandos apropriados. Por
-exemplo, a express„o $\sin(\omega t+\phi)$ est· correta, enquanto que
-a express„o $sin(\omega t+\phi)$ È interpretada pelo \LaTeX como sendo
-o produto das vari·veis $s$, $i$ e $n$ pela express„o entre
-parÍnteses. Para as funÁıes usuais j· existem comandos predefinidos,
-como \verb|\sin|. Para suas prÛprias funÁıes, utilize o comando
+Um erro comum em express√µes matem√°ticas √© o de digitar os nomes de
+fun√ß√µes diretamente, sem utilizar os comandos apropriados. Por
+exemplo, a express√£o $\sin(\omega t+\phi)$ est√° correta, enquanto que
+a express√£o $sin(\omega t+\phi)$ √© interpretada pelo \LaTeX como sendo
+o produto das vari√°veis $s$, $i$ e $n$ pela express√£o entre
+par√™nteses. Para as fun√ß√µes usuais j√° existem comandos predefinidos,
+como \verb|\sin|. Para suas pr√≥prias fun√ß√µes, utilize o comando
 \verb|\operatorname{}|, diretamente ou definindo um novo comando:
 % newcommand define novos comandos, que podem passar a ser usados da
 % mesma forma que os comandos LaTeX de base.
@@ -113,34 +113,34 @@ como \verb|\sin|. Para suas prÛprias funÁıes, utilize o comando
 \fat(x) = x \cdot \fat(x-1)
 \]
 
-O \LaTeX\ possui uma sintaxe especÌfica para Ìndices (sub-escritos) e
+O \LaTeX\ possui uma sintaxe espec√≠fica para √≠ndices (sub-escritos) e
 expoentes (super-escritos) posicionados do lado direito do objeto a
-que se referem, mas n„o do lado esquerdo. Para conseguir este efeito,
-adicione Ìndices e/ou expoentes a um bloco vazio posicionado antes do
+que se referem, mas n√£o do lado esquerdo. Para conseguir este efeito,
+adicione √≠ndices e/ou expoentes a um bloco vazio posicionado antes do
 objeto:
-% O ambiente xalignat* È normalmente utilizado para escrever expressıes
-% matem·ticas multilinhas com v·rios pontos de alinhamento. Ser· detalhado
-% na prÛxima seÁ„o. Neste caso, est· sendo usado de um modo n„o
-% convencional, pois se trata de uma express„o sÛ com uma linha. O ambiente
-% xalignat* est· sendo empregado aqui para espaÁar igualmente os 6 Ìtens
-% da express„o ao longo da linha de texto.
+% O ambiente xalignat* √© normalmente utilizado para escrever express√µes
+% matem√°ticas multilinhas com v√°rios pontos de alinhamento. Ser√° detalhado
+% na pr√≥xima se√ß√£o. Neste caso, est√° sendo usado de um modo n√£o
+% convencional, pois se trata de uma express√£o s√≥ com uma linha. O ambiente
+% xalignat* est√° sendo empregado aqui para espa√ßar igualmente os 6 √≠tens
+% da express√£o ao longo da linha de texto.
 \begin{xalignat*}{3}
     &w^2 &     &w_i &   {}_z&w \\
 {}^*&w   & {}_P&w^Q & {}^A_B&w^C_D
 \end{xalignat*}
 
-\section{EquaÁıes}
+\section{Equa√ß√µes}
 \label{Sec:equacoes}
 
-As equaÁıes s„o delimitadas por \verb|\begin{equation}| e
+As equa√ß√µes s√£o delimitadas por \verb|\begin{equation}| e
 \verb|\end{equation}|. Devem ser identificadas por um \verb|\label|
-para permitir referÍncias futuras:
-% Nesta equaÁ„o s„o utilizados delimitadores. N„o se pode usar um
+para permitir refer√™ncias futuras:
+% Nesta equa√ß√£o s√£o utilizados delimitadores. N√£o se pode usar um
 % delimitador direito sem o esquerdo correspondente, mas os delimitadores
-% n„o precisam ser do mesmo tipo (posso abrir com chave e fechar com
-% colchete, por exemplo). Existe o delimitador . que È um delimitador
-% vazio. Para colocar uma barra vertical ao lado das expressıes, colocamos
-% um delimitador . ‡ esquerda e um delimitador | ‡ direita.
+% n√£o precisam ser do mesmo tipo (posso abrir com chave e fechar com
+% colchete, por exemplo). Existe o delimitador . que √© um delimitador
+% vazio. Para colocar uma barra vertical ao lado das express√µes, colocamos
+% um delimitador . √† esquerda e um delimitador | √† direita.
 \begin{equation}
 y = g(x) = g(x_{PO}) + \left.\frac{dg}{dx}\right|_{x=x_{PO}}
 \frac{(x-x_{PO})}{1!} + \left.\frac{d^2g}{dx^2}\right|_{x=x_{PO}}
@@ -148,33 +148,33 @@ y = g(x) = g(x_{PO}) + \left.\frac{dg}{dx}\right|_{x=x_{PO}}
 \label{Eq:Taylor}
 \end{equation}
 
-Devem-se evitar referÍncias com expressıes do tipo ``a equaÁ„o acima''
-e ``a prÛxima equaÁ„o'', pois modificaÁıes no texto podem tornar a
-referÍncia inv·lida. Use sempre referÍncias pelo rÛtulo
-(\texttt{label}), como em ``a equaÁ„o~\ref{Eq:Taylor}'', mesmo para
-equaÁıes prÛximas.
+Devem-se evitar refer√™ncias com express√µes do tipo ``a equa√ß√£o acima''
+e ``a pr√≥xima equa√ß√£o'', pois modifica√ß√µes no texto podem tornar a
+refer√™ncia inv√°lida. Use sempre refer√™ncias pelo r√≥tulo
+(\texttt{label}), como em ``a equa√ß√£o~\ref{Eq:Taylor}'', mesmo para
+equa√ß√µes pr√≥ximas.
 
-Existem v·rios ambientes para escrever equaÁıes, como o \verb|cases|
-para construir expressıes condicionais:
+Existem v√°rios ambientes para escrever equa√ß√µes, como o \verb|cases|
+para construir express√µes condicionais:
 \begin{equation}
 f(x) = 1+\begin{cases}
 0   & \text{se $x=0$}\\
-1/x & \text{caso contr·rio}
+1/x & \text{caso contr√°rio}
 \end{cases} + \begin{cases}
-x/2             & \text{se $x$ È inteiro e par}\\
-\frac{x+1}{2}   & \text{se $x$ È inteiro e Ìmpar}\\
-\frac{x+0.5}{2} & \text{se $x$ n„o È inteiro}
+x/2             & \text{se $x$ √© inteiro e par}\\
+\frac{x+1}{2}   & \text{se $x$ √© inteiro e √≠mpar}\\
+\frac{x+0.5}{2} & \text{se $x$ n√£o √© inteiro}
 \end{cases}
 \end{equation}
 
-\section{Expressıes multilinhas}
+\section{Express√µes multilinhas}
 \label{Sec:multilinhas}
 
-O pacote \texttt{amstex} define v·rios ambientes para criar expressıes
-matem·ticas que ocupam mais de uma linha. Existem versıes dos
-ambientes com e sem inclus„o do n˙mero na equaÁ„o, conforme indicado
+O pacote \texttt{amstex} define v√°rios ambientes para criar express√µes
+matem√°ticas que ocupam mais de uma linha. Existem vers√µes dos
+ambientes com e sem inclus√£o do n√∫mero na equa√ß√£o, conforme indicado
 na tabela~\ref{Tab:multilinhas}\footnotemark.
-% A explicaÁ„o sobre o comando \footnotemark est· logo mais ‡ frente
+% A explica√ß√£o sobre o comando \footnotemark est√° logo mais √† frente
 % no texto
 
 \begin{table}[htbp]
@@ -185,42 +185,42 @@ na tabela~\ref{Tab:multilinhas}\footnotemark.
 \multicolumn{2}{|c|}{PACOTE} &
 \multicolumn{1}{c|}{\multirow{2}{\LL}{Tipo de alinhamento}}
 \\ \cline{1-2}
-\textrm{Com n˙mero} & \textrm{Sem n˙mero} &  \\ \hline
-gather & gather* & sem alinhamento (sÛ m˙ltiplas linhas) \\
-multiline & multline* & quebra de equaÁ„o em v·rias linhas \\
-align & align* & alinhamento em um ˙nico ponto \\
-alignat & alignat* & alinhamento em v·rios pontos, no centro da linha\\
-xalignat & xalignat* & v·rios pontos, ocupando toda a linha (com margens)\\
--- & xxalignat & v·rios pontos, ocupando toda a linha (sem margens)
+\textrm{Com n√∫mero} & \textrm{Sem n√∫mero} &  \\ \hline
+gather & gather* & sem alinhamento (s√≥ m√∫ltiplas linhas) \\
+multiline & multline* & quebra de equa√ß√£o em v√°rias linhas \\
+align & align* & alinhamento em um √∫nico ponto \\
+alignat & alignat* & alinhamento em v√°rios pontos, no centro da linha\\
+xalignat & xalignat* & v√°rios pontos, ocupando toda a linha (com margens)\\
+-- & xxalignat & v√°rios pontos, ocupando toda a linha (sem margens)
 \\ \hline
 \end{tabular}
 \end{center}
-\caption{Os ambientes para geraÁ„o de equaÁıes multilinhas}
+\caption{Os ambientes para gera√ß√£o de equa√ß√µes multilinhas}
 \label{Tab:multilinhas}
 \end{table}
 
 Para os ambientes \texttt{alignat}, \texttt{xalignat} e
-\texttt{xxalignat} existe um par‚metro obrigatÛrio que È o n˙mero de
+\texttt{xxalignat} existe um par√¢metro obrigat√≥rio que √© o n√∫mero de
 elementos em cada linha. Cada elemento tem um ponto de alinhamento com
-os outros elementos da mesma coluna em outras linhas.  Cada elemento È
-separado do prÛximo por um \texttt{\&}. Dentro de cada elemento, um
+os outros elementos da mesma coluna em outras linhas.  Cada elemento √©
+separado do pr√≥ximo por um \texttt{\&}. Dentro de cada elemento, um
 novo \texttt{\&} marca seu ponto de alinhamento, conforme o exemplo da
-tabela \ref{Tab:exemplomultilinhas}, onde se vÍ o cÛdigo fonte e o
+tabela \ref{Tab:exemplomultilinhas}, onde se v√™ o c√≥digo fonte e o
 resultado produzido.
 
-% Este table n„o contÈm um tabular, mas sim uma frase composta por
+% Este table n√£o cont√©m um tabular, mas sim uma frase composta por
 % dois minipages. Maiores detalhes sobre tables, tabulars, etc. no
-% capÌtulo seguinte.
+% cap√≠tulo seguinte.
 \begin{table}[htbp] \begin{center}
 \hrule
-% O ambiente minipage cria uma microp·gina com a dimens„o especificada
-% e que se comporta exatamente como a p·gina real, porÈm com dimensıes
-% reduzidas. Ela pode ser incluÌda em praticamente todo outro ambiente
+% O ambiente minipage cria uma microp√°gina com a dimens√£o especificada
+% e que se comporta exatamente como a p√°gina real, por√©m com dimens√µes
+% reduzidas. Ela pode ser inclu√≠da em praticamente todo outro ambiente
 % e no meio de frases.
 \begin{minipage}[c]{0.3\linewidth}
 \tiny
-% O ambiente verbatim pıe na tela o texto exatamente como foi digitado.
-% Muito ˙til para incluir cÛdigo fonte, como neste caso.
+% O ambiente verbatim p√µe na tela o texto exatamente como foi digitado.
+% Muito √∫til para incluir c√≥digo fonte, como neste caso.
 \begin{verbatim}
 \begin{xxalignat}{3}
 &aaaa  &  mm&mm  &  cccc& \\
@@ -228,15 +228,15 @@ xxxx&  &  ii&ii  &  llll&
 \end{xxalignat}
 \end{verbatim}
 \end{minipage}
-% para uma minipage ficar ‡ esquerda e a outra ‡ direita vamos
-% incluir entre elas dois espaÁos horizontais \hfill, que s„o espaÁos
-% que "esticam" atÈ ocupar a m·xima largura possÌvel.
+% para uma minipage ficar √† esquerda e a outra √† direita vamos
+% incluir entre elas dois espa√ßos horizontais \hfill, que s√£o espa√ßos
+% que "esticam" at√© ocupar a m√°xima largura poss√≠vel.
 \hfill
 $\implica$
 \hfill
 \begin{minipage}[c]{0.3\linewidth}
 \begin{xxalignat}{3}
-% A primeira coluna alinha o inÌcio de um com o fim do outro
+% A primeira coluna alinha o in√≠cio de um com o fim do outro
 % A segunda coluna alinha os dois pelo meio
 % A terceira coluna alinha os dois pelo fim
 &aaaa  &  mm&mm  &  cccc& \\
@@ -244,75 +244,75 @@ xxxx&  &  ii&ii  &  llll&
 \end{xxalignat}
 \end{minipage}
 \hrule
-\caption{Exemplo de equaÁ„o multilinha com v·rios pontos de alinhamento}
+\caption{Exemplo de equa√ß√£o multilinha com v√°rios pontos de alinhamento}
 \label{Tab:exemplomultilinhas}
 \end{center}\end{table}
 
 Os ambientes da tabela~\ref{Tab:multilinhas} funcionam como um
 ambiente \texttt{equation}: ocupam toda a linha e centralizam a
-express„o.  Em algumas situaÁıes, entretanto, se deseja incluir um
-sub-ambiente multilinhas dentro de uma express„o mais geral. Para
-isto, o \texttt{amstex} fornece as opÁıes listadas na
+express√£o.  Em algumas situa√ß√µes, entretanto, se deseja incluir um
+sub-ambiente multilinhas dentro de uma express√£o mais geral. Para
+isto, o \texttt{amstex} fornece as op√ß√µes listadas na
 tabela~\ref{Tab:submultilinhas}\addtocounter{footnote}{-1}\footnotemark.
-% Para inserir uma nota de rodapÈ, pode-se utilizar o comando \footnote,
-% que j· insere a marca e o texto. Em algumas situaÁıes, entretanto, È
+% Para inserir uma nota de rodap√©, pode-se utilizar o comando \footnote,
+% que j√° insere a marca e o texto. Em algumas situa√ß√µes, entretanto, √©
 % preciso utilizar um comando para a marca (\footnotemark) e outro para
-% o texto (\footnotetext). Uma das situaÁıes onde isto È necess·rio È
+% o texto (\footnotetext). Uma das situa√ß√µes onde isto √© necess√°rio √©
 % o caso deste exemplo, onde queremos que duas marcas se refiram ao
 % mesmo texto.
-% O comando \footnotemark incrementa o contador das marcas de rodapÈ,
-% de modo que o primeiro \footnotemark imprimir· a marca 1, o segundo a
-% marca 2, etc. Para contornar este incremento autom·tico, nÛs
+% O comando \footnotemark incrementa o contador das marcas de rodap√©,
+% de modo que o primeiro \footnotemark imprimir√° a marca 1, o segundo a
+% marca 2, etc. Para contornar este incremento autom√°tico, n√≥s
 % decrementamos o contador de uma unidade antes da segunda chamada.
 
-% Agora vai o texto da nota de rodapÈ. Ele È associado ‡ marca do
-% ˙ltimo \footnotemark. O comando \footnotetext n„o incrementa o
-% contador de notas de rodapÈ.
-\footnotetext{Nestas tabelas foram utilizadas extensıes do ambiente
+% Agora vai o texto da nota de rodap√©. Ele √© associado √† marca do
+% √∫ltimo \footnotemark. O comando \footnotetext n√£o incrementa o
+% contador de notas de rodap√©.
+\footnotetext{Nestas tabelas foram utilizadas extens√µes do ambiente
 \texttt{tabular} fornecidas pelo pacote \texttt{tabularx}. Esta
-extensıes ser„o explicadas no capÌtulo \ref{Cap:figuras}}
+extens√µes ser√£o explicadas no cap√≠tulo \ref{Cap:figuras}}
 
 \begin{table}[htbp]
 \begin{center}
 \begin{tabular}{|>{\tt}l|l|} \hline
-% Estes multicolumn's que abranjem uma ˙nica coluna s„o utilizados para
-% mudar o tipo de alinhamento. Por default, a primeira coluna È alinhada
-% ‡ esquerda (l). Usando o multicolumn, consegue-se que apenas o elemento
-% na linha em quest„o fique centralizado (c).
+% Estes multicolumn's que abranjem uma √∫nica coluna s√£o utilizados para
+% mudar o tipo de alinhamento. Por default, a primeira coluna √© alinhada
+% √† esquerda (l). Usando o multicolumn, consegue-se que apenas o elemento
+% na linha em quest√£o fique centralizado (c).
 \multicolumn{1}{|c|}{PACOTE} &
 \multicolumn{1}{c|}{Tipo de alinhamento}
 \\ \hline
-gathered & sem alinhamento (sÛ m˙ltiplas linhas) \\
-aligned & alinhamento em um ˙nico ponto \\
-alignedat & alinhamento em v·rios pontos
+gathered & sem alinhamento (s√≥ m√∫ltiplas linhas) \\
+aligned & alinhamento em um √∫nico ponto \\
+alignedat & alinhamento em v√°rios pontos
 \\ \hline
 \end{tabular}
 \end{center}
-\caption{Os ambientes para geraÁ„o de trechos multilinhas em equaÁıes}
+\caption{Os ambientes para gera√ß√£o de trechos multilinhas em equa√ß√µes}
 \label{Tab:submultilinhas}
 \end{table}
 
-A equaÁ„o \ref{Eq:alinhamento} ilustra a utilizaÁ„o de ambientes
+A equa√ß√£o \ref{Eq:alinhamento} ilustra a utiliza√ß√£o de ambientes
 \texttt{aligned} inseridos dentro de um ambiente \texttt{alignat}.
-Nos ambientes multilinhas numerados cada linha ter· seu prÛprio n˙mero
-e dever· receber seu prÛprio rÛtulo (\texttt{label}), exceto caso se
-informe explicitamente que a linha n„o dever· ser numerada, usando o
+Nos ambientes multilinhas numerados cada linha ter√° seu pr√≥prio n√∫mero
+e dever√° receber seu pr√≥prio r√≥tulo (\texttt{label}), exceto caso se
+informe explicitamente que a linha n√£o dever√° ser numerada, usando o
 comando \verb|\nonumber|.
 
 \begin{alignat}{3}
-% Primeira linha do alignat (n„o numerada)
+% Primeira linha do alignat (n√£o numerada)
 % Primeiro elemento do alignat (inclui um aligned) - alinha no fim
 \left\{\begin{aligned} % Alinha no sinal de =
 \dot{\mathbf{x}}(t) &= \mathsf{A}\mathbf{x}(t)+\mathsf{B}\mathbf{u}(t) \\
 \mathbf{y} &= \mathsf{C}\mathbf{x}(t)+\mathsf{D}\mathbf{u}(t)
 \end{aligned}\right.&
-% Note que o aligned È envolvido por dois delimitadores diferentes:
+% Note que o aligned √© envolvido por dois delimitadores diferentes:
 % uma chave (\left\{) no lado esquerdo e um vazio (\right.) no direito
 &
-% Segundo elemento do alignat (sÛ uma seta) - alinha no inÌcio
+% Segundo elemento do alignat (s√≥ uma seta) - alinha no in√≠cio
 &\implica
 &
-% Terceiro elemento do alignat (inclui um aligned) - alinha no inÌcio
+% Terceiro elemento do alignat (inclui um aligned) - alinha no in√≠cio
 &\left\{\begin{aligned} % Alinha no sinal de =
 s\mathbf{X}(s)-\mathbf{x}(0)&=\mathsf{A}\mathbf{X}(s)+\mathsf{B}\mathbf{U}(s)\\
 \mathbf{Y}(s) &= \mathsf{C}\mathbf{X}(s)+\mathsf{D}\mathbf{U}(s)
@@ -326,10 +326,10 @@ s\mathbf{X}(s)-\mathbf{x}(0)&=\mathsf{A}\mathbf{X}(s)+\mathsf{B}\mathbf{U}(s)\\
 \mathbf{Y}(s) &= \mathsf{C}\mathbf{X}(s)+\mathsf{D}\mathbf{U}(s)
 \end{aligned}\right.&
 &
-% Segundo elemento do alignat - alinha no inÌcio
+% Segundo elemento do alignat - alinha no in√≠cio
 &\quad \text{onde} \quad
 &
-% Terceiro elemento do alignat - alinha no inÌcio
+% Terceiro elemento do alignat - alinha no in√≠cio
 &\Phi(s) = (s\mathsf{I}-\mathsf{A})^{-1}
 \label{Eq:alinhamento}
 \end{alignat}

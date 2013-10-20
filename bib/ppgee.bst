@@ -296,8 +296,8 @@ FUNCTION {format.number.series}
     { number empty$
 	{ series field.or.null }
 	{ output.state mid.sentence =
-	    { "número" }
-	    { "Número" }
+	    { "nÃºmero" }
+	    { "NÃºmero" }
 	  if$
 	  number tie.or.space.connect
 	  series empty$
@@ -315,8 +315,8 @@ FUNCTION {format.edition}
 { edition empty$
     { "" }
     { output.state mid.sentence =
-	{ edition "l" change.case$ "ª edição" * }
-	{ edition "t" change.case$ "ª edição" * }
+	{ edition "l" change.case$ "Âª ediÃ§Ã£o" * }
+	{ edition "t" change.case$ "Âª ediÃ§Ã£o" * }
       if$
     }
   if$
@@ -380,7 +380,7 @@ FUNCTION {format.chapter.pages}
 { chapter empty$
     'format.pages
     { type empty$
-	{ "capítulo" }
+	{ "capÃ­tulo" }
 	{ type "l" change.case$ }
       if$
       chapter tie.or.space.connect
@@ -424,7 +424,7 @@ FUNCTION {format.thesis.type}
 
 FUNCTION {format.tr.number}
 { type empty$
-    { "Relatório Técnico" }
+    { "RelatÃ³rio TÃ©cnico" }
     'type
   if$
   number empty$
@@ -892,7 +892,7 @@ FUNCTION {mastersthesis}
     { skip$ }
     { format.title "title" output.check }
   if$
-  "Dissertação de mestrado" format.thesis.type output.nonnull
+  "DissertaÃ§Ã£o de mestrado" format.thesis.type output.nonnull
   school "school" output.check
   address output
   new.block
@@ -1006,7 +1006,7 @@ MACRO {jan} {"janeiro"}
 
 MACRO {feb} {"fevereiro"}
 
-MACRO {mar} {"março"}
+MACRO {mar} {"marÃ§o"}
 
 MACRO {apr} {"abril"}
 

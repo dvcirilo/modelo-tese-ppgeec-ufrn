@@ -5,19 +5,19 @@ default: all
 all: pdf nomenclature bibtex
 
 pdf:
-	pdflatex principal.tex
+	pdflatex main.tex
 
 nomenclature: pdf
-	makeindex principal.nlo -s nomencl.ist -o principal.nls
-	pdflatex principal.tex
+	makeindex main.nlo -s nomencl.ist -o main.nls
+	pdflatex main.tex
 
 bibtex: pdf
-	bibtex principal.aux
-	pdflatex principal.tex
-	pdflatex principal.tex
+	bibtex main.aux
+	pdflatex main.tex
+	pdflatex main.tex
 
 clean:
-	rm -f  *.aux *~ *.bak */*.aux */*~ */*.bak */*/*.aux principal.bbl principal.blg principal.dvi principal.nlo principal.nls principal.ilg principal.lof principal.log principal.lot principal.toc
+	rm -f  *.aux *~ *.bak */*.aux */*~ */*.bak */*/*.aux main.bbl main.blg main.dvi main.nlo main.nls main.ilg main.lof main.log main.lot main.toc
 
 realclean: clean
-	rm -f principal.pdf
+	rm -f main.pdf
